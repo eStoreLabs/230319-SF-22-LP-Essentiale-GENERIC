@@ -154,6 +154,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100svw;
+  /* padding in case iPhones still cause issues */
+  padding-block: 100px;
   min-height: 100svh;
   height: calc(var(--vh, 1vh) * 100);
   /* Avoid Chrome to see Safari hack */
@@ -172,6 +174,7 @@ body {
 @media (min-width: 768px) {
   #es-rc #es-rc-content [data-es-rc] .navbar-collapse {
     position: static;
+    padding-block: unset;
   }
 }
 #es-rc #es-rc-content [data-es-rc] .nav-link {
@@ -202,6 +205,7 @@ body {
   #es-rc #es-rc-content [data-es-rc] .navbar-collapse {
     width: unset;
     min-height: unset;
+    height: unset;
     background-image: none;
   }
   #es-rc #es-rc-content [data-es-rc] .es-navbar {

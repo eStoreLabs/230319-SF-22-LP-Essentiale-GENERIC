@@ -138,6 +138,8 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         width: 100svw;
+        /* padding in case iPhones still cause issues */
+        padding-block: 100px;
         min-height: 100svh;
         height: calc(var(--vh, 1vh) * 100);
         
@@ -155,7 +157,9 @@ body {
 
         @media (min-width: 768px) {
             position: static;
+            padding-block: unset;
         }
+        
     }
 
     .nav-link {
@@ -193,6 +197,7 @@ body {
         .navbar-collapse {
             width: unset;
             min-height: unset;
+            height: unset;
             background-image: none;
         }
 
